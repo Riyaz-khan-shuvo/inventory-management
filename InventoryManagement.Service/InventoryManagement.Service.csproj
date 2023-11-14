@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\EnrolConfigurations\NewFolder\**" />
+    <Compile Remove="Services\Enrols\**" />
+    <EmbeddedResource Remove="Services\EnrolConfigurations\NewFolder\**" />
+    <EmbeddedResource Remove="Services\Enrols\**" />
+    <None Remove="Services\EnrolConfigurations\NewFolder\**" />
+    <None Remove="Services\Enrols\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Services\EnrolConfigurations\ISalesService.cs~RF365833fc.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\InventoryManagement.Core\InventoryManagement.Core.csproj" />
+    <ProjectReference Include="..\InventoryManagement.Sql\InventoryManagement.Sql.csproj" />
+  </ItemGroup>
+
+</Project>
